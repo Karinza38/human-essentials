@@ -43,7 +43,7 @@ gem "solid_cache", "~> 1.0"
 ##### JAVSCRIPT/CSS/ASSETS #######
 
 # Bootstrap is a library for HTML, CSS and JS.
-gem 'bootstrap', '~> 5.2'
+gem 'bootstrap', '~> 5.3', '>= 5.3.2'
 # SASS CSS framework (nested selectors, variables, etc.)
 gem "sass-rails"
 # Used to verify that the user is a human.
