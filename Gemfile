@@ -14,7 +14,7 @@ gem "pg", "~> 1.5.9"
 # Web server.
 gem "puma"
 # Rails web framework.
-gem "rails", "7.2.2"
+gem "rails", "7.2.2.1"
 
 ###### MODELS / DATABASE #######
 
@@ -28,7 +28,7 @@ gem "groupdate", "~> 6.5"
 # Treats attributes like money, which knows about dollars and cents.
 gem "money-rails"
 # Tracks history / audits models.
-gem "paper_trail"
+gem "paper_trail", ">= 16.0.0"
 # Associates users with roles.
 gem "rolify", "~> 6.0"
 # Enforces "safe" migrations.
@@ -38,7 +38,7 @@ gem "strong_migrations", "1.8.0"
 # used in events
 gem 'dry-struct'
 # Use solid_cache as a cache store
-gem "solid_cache", "~> 1.0"
+gem "solid_cache", "~> 1.0", ">= 1.0.7"
 
 ##### JAVSCRIPT/CSS/ASSETS #######
 
@@ -49,7 +49,7 @@ gem "sass-rails"
 # Used to verify that the user is a human.
 gem "recaptcha"
 # Hotwire for SPA like without much JS
-gem "turbo-rails"
+gem "turbo-rails", ">= 2.0.11"
 # Sprinkle a little JS to add interactivity
 gem "stimulus-rails"
 
@@ -62,11 +62,11 @@ gem "jbuilder"
 # Pagination of models for use in views.
 gem "kaminari"
 # Web-based authorization framework.
-gem "omniauth"
+gem "omniauth", ">= 2.1.3"
 # Required to avoid authentication issues with Rails.
 gem "omniauth-rails_csrf_protection"
 # Allow login via Google.
-gem "omniauth-google-oauth2"
+gem "omniauth-google-oauth2", ">= 1.2.1"
 
 gem "matrix"
 # Generate PDFs as views.
@@ -83,13 +83,13 @@ gem 'delayed_job_active_record'
 # UI for showing job status.
 gem 'delayed_job_web'
 # Sends invitations via e-mail for new users.
-gem "devise_invitable"
+gem "devise_invitable", ">= 2.0.10"
 # Environment variable and configuration management.
-gem "dotenv-rails"
+gem "dotenv-rails", ">= 3.1.8"
 # Feature flagging and management.
 gem "flipper"
 gem "flipper-active_record"
-gem "flipper-ui"
+gem "flipper-ui", ">= 1.3.3"
 # Calculates latitude and longitude from an address.
 gem "geocoder"
 # Enable making HTTP requests
@@ -111,7 +111,7 @@ gem 'bootsnap', require: false
 # specific versions for compatibility reasons.
 gem "nokogiri", ">= 1.10.4"
 gem "image_processing"
-gem "sprockets", "~> 4.2.1"
+gem "sprockets", "~> 4.2.2"
 
 group :production, :staging do
   # Reduce the noise of logs and include custom fields to it for easier access
@@ -122,7 +122,7 @@ end
 
 group :development, :test, :staging do
   # Generate models based on factory definitions.
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.5.0'
   # Ensure the database is in a clean state on every test.
   gem "database_cleaner-active_record", '~> 2.2'
   # Generate fake data for use in tests.
@@ -139,7 +139,7 @@ group :development, :test do
   # Split tests in a suite across multiple runners.
   gem "knapsack_pro"
   # Show core documentation in command line.
-  gem "pry-doc"
+  gem "pry-doc", ">= 1.6.0"
   # Rails plugin for command line.
   gem "pry-rails"
   # Connect to a remotely running command line instance.
@@ -149,17 +149,17 @@ group :development, :test do
   # Debugger which supports rdbg and Shopify Ruby LSP VSCode extension
   gem "debug", ">= 1.0.0"
   # RSpec behavioral testing framework for Rails.
-  gem "rspec-rails", "~> 7.1.0"
+  gem "rspec-rails", "~> 7.1.1"
   # Static analysis / linter.
   gem "rubocop"
   # Rails add-on for static analysis.
   gem 'rubocop-performance'
-  gem "rubocop-rails", "~> 2.25.1"
+  gem "rubocop-rails", "~> 2.26.0"
   # More concise test ("should") matchers
   gem "shoulda-matchers", "~> 6.2"
   # Default rules for Rubocop.
   gem "standard", "~> 1.40"
-  gem "standard-rails"
+  gem "standard-rails", ">= 1.2.0"
   gem "standard-performance"
   # Erb linter.
   gem "erb_lint"
@@ -185,7 +185,7 @@ group :development do
   # Allows to create a console in the browser.
   gem "web-console"
   # Middleware that displays speed badge for every HTML page
-  gem "rack-mini-profiler"
+  gem "rack-mini-profiler", ">= 4.0.0"
   # Adds memory profiling to rack-mini-profiler
   gem "memory_profiler"
   # Adds call-stack profiling flamegraphs to rack-mini-profiler
@@ -208,7 +208,7 @@ group :test do
   # Mock HTTP requests and ensure they are not called during tests.
   gem "webmock", "~> 3.24"
   # Interface capybara to chrome headless
-  gem "cuprite"
+  gem "cuprite", ">= 0.16"
   # Read PDF files for tests
   gem "pdf-reader"
 end
