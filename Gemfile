@@ -14,7 +14,7 @@ gem "pg", "~> 1.5.9"
 # Web server.
 gem "puma"
 # Rails web framework.
-gem "rails", "7.2.2"
+gem "rails", "7.2.2.1"
 
 ###### MODELS / DATABASE #######
 
@@ -38,18 +38,18 @@ gem "strong_migrations", "1.8.0"
 # used in events
 gem 'dry-struct'
 # Use solid_cache as a cache store
-gem "solid_cache", "~> 1.0"
+gem "solid_cache", "~> 1.0", ">= 1.0.7"
 
 ##### JAVSCRIPT/CSS/ASSETS #######
 
 # Bootstrap is a library for HTML, CSS and JS.
-gem 'bootstrap', '~> 5.2'
+gem 'bootstrap', '~> 5.3', '>= 5.3.0'
 # SASS CSS framework (nested selectors, variables, etc.)
 gem "sass-rails"
 # Used to verify that the user is a human.
 gem "recaptcha"
 # Hotwire for SPA like without much JS
-gem "turbo-rails"
+gem "turbo-rails", ">= 2.0.11"
 # Sprinkle a little JS to add interactivity
 gem "stimulus-rails"
 
@@ -83,9 +83,9 @@ gem 'delayed_job_active_record'
 # UI for showing job status.
 gem 'delayed_job_web'
 # Sends invitations via e-mail for new users.
-gem "devise_invitable"
+gem "devise_invitable", ">= 2.0.10"
 # Environment variable and configuration management.
-gem "dotenv-rails"
+gem "dotenv-rails", ">= 3.1.8"
 # Feature flagging and management.
 gem "flipper"
 gem "flipper-active_record"
@@ -122,7 +122,7 @@ end
 
 group :development, :test, :staging do
   # Generate models based on factory definitions.
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.5.0'
   # Ensure the database is in a clean state on every test.
   gem "database_cleaner-active_record", '~> 2.2'
   # Generate fake data for use in tests.
@@ -149,7 +149,7 @@ group :development, :test do
   # Debugger which supports rdbg and Shopify Ruby LSP VSCode extension
   gem "debug", ">= 1.0.0"
   # RSpec behavioral testing framework for Rails.
-  gem "rspec-rails", "~> 7.1.0"
+  gem "rspec-rails", "~> 7.1.1"
   # Static analysis / linter.
   gem "rubocop"
   # Rails add-on for static analysis.
@@ -221,4 +221,4 @@ if %w(mingw mswin x64_mingw jruby).include?(RUBY_PLATFORM)
   gem "tzinfo-data", "~> 1.2", platforms: %i(mingw mswin x64_mingw jruby)
 end
 
-gem "importmap-rails", "~> 2.1"
+gem "importmap-rails", "~> 2.2", ">= 2.2.0"
