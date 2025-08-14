@@ -14,7 +14,7 @@ gem "pg", "~> 1.5.9"
 # Web server.
 gem "puma"
 # Rails web framework.
-gem "rails", "7.2.2"
+gem "rails", "7.2.2.2"
 
 ###### MODELS / DATABASE #######
 
@@ -22,23 +22,23 @@ gem "rails", "7.2.2"
 # gem 'azure-storage', '~> 0.15.0.preview', require: false
 gem 'azure-storage-blob'
 # Adds soft delete functionality for models.
-gem 'discard', '~> 1.3'
+gem 'discard', '~> 1.4', '>= 1.4.0'
 # Adds grouping by date/month/etc to queries.
 gem "groupdate", "~> 6.5"
 # Treats attributes like money, which knows about dollars and cents.
 gem "money-rails"
 # Tracks history / audits models.
-gem "paper_trail"
+gem "paper_trail", ">= 16.0.0"
 # Associates users with roles.
 gem "rolify", "~> 6.0"
 # Enforces "safe" migrations.
 # Pinned to 1.8.0 because 2.0.0 no longer support postgres v10
 # And as of now we are using postgres v10 in production
-gem "strong_migrations", "1.8.0"
+gem "strong_migrations", "2.0.0"
 # used in events
 gem 'dry-struct'
 # Use solid_cache as a cache store
-gem "solid_cache", "~> 1.0"
+gem "solid_cache", "~> 1.0", ">= 1.0.7"
 
 ##### JAVSCRIPT/CSS/ASSETS #######
 
@@ -79,7 +79,7 @@ gem "simple_form"
 # External service that monitors exceptions and reports them to Slack or e-mail.
 gem "bugsnag"
 # Runs jobs asynchronously using the database as a queue.
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.9'
 # UI for showing job status.
 gem 'delayed_job_web'
 # Sends invitations via e-mail for new users.
@@ -88,7 +88,7 @@ gem "devise_invitable"
 gem "dotenv-rails"
 # Feature flagging and management.
 gem "flipper"
-gem "flipper-active_record"
+gem "flipper-active_record", ">= 1.3.3"
 gem "flipper-ui"
 # Calculates latitude and longitude from an address.
 gem "geocoder"
@@ -124,7 +124,7 @@ group :development, :test, :staging do
   # Generate models based on factory definitions.
   gem 'factory_bot_rails'
   # Ensure the database is in a clean state on every test.
-  gem "database_cleaner-active_record", '~> 2.2'
+  gem "database_cleaner-active_record", "~> 2.2", ">= 2.2.1"
   # Generate fake data for use in tests.
   gem 'faker'
 end
