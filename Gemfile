@@ -206,7 +206,7 @@ group :test do
   # Show code coverage.
   gem 'simplecov'
   # Mock HTTP requests and ensure they are not called during tests.
-  gem "webmock", "~> 3.24"
+  gem "webmock", "~> 3.25", ">= 3.25.0"
   # Interface capybara to chrome headless
   gem "cuprite"
   # Read PDF files for tests
