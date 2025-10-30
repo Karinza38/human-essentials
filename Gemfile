@@ -72,7 +72,7 @@ gem "matrix"
 # Generate PDFs as views.
 gem "prawn-rails"
 # Reduces boilerplate HTML code when writing forms.
-gem "simple_form"
+gem "simple_form", ">= 5.4.0"
 
 ##### ADDITIONAL FUNCTIONS #####
 
