@@ -64,7 +64,7 @@ gem "kaminari"
 # Web-based authorization framework.
 gem "omniauth"
 # Required to avoid authentication issues with Rails.
-gem "omniauth-rails_csrf_protection"
+gem "omniauth-rails_csrf_protection", ">= 2.0.0"
 # Allow login via Google.
 gem "omniauth-google-oauth2"
 
