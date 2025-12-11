@@ -26,7 +26,7 @@ gem 'discard', '~> 1.3'
 # Adds grouping by date/month/etc to queries.
 gem "groupdate", "~> 6.5"
 # Treats attributes like money, which knows about dollars and cents.
-gem "money-rails"
+gem "money-rails", ">= 2.0.0"
 # Tracks history / audits models.
 gem "paper_trail"
 # Associates users with roles.
