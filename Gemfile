@@ -93,7 +93,7 @@ gem "flipper-ui"
 # Calculates latitude and longitude from an address.
 gem "geocoder"
 # Enable making HTTP requests
-gem 'httparty'
+gem 'httparty', '>= 0.24.0'
 # Generate .ics calendars for use with Google Calendar
 gem 'icalendar', require: false
 # JSON Web Token encoding / decoding (e.g. for links in e-mails)
