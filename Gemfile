@@ -8,7 +8,7 @@ end
 ###### BASIC FRAMEWORKS ######
 
 # User management and login workflow.
-gem "devise", '>= 4.7.1'
+gem "devise", ">= 5.0.0"
 # Postgres database adapter.
 gem "pg", "~> 1.5.9"
 # Web server.
