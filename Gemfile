@@ -66,7 +66,7 @@ gem "omniauth"
 # Required to avoid authentication issues with Rails.
 gem "omniauth-rails_csrf_protection"
 # Allow login via Google.
-gem "omniauth-google-oauth2"
+gem "omniauth-google-oauth2", ">= 1.2.1"
 
 gem "matrix"
 # Generate PDFs as views.
